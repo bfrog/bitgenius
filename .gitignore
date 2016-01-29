@@ -1,0 +1,7 @@
+static/
+cache/
+*.pid
+__pycache__
+theme/node_modules
+env
+output
