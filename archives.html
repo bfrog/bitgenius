@@ -1,31 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>bitgeni.us</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="https://bitgeni.us/theme/css/bitgenius.css" />
-    <link href="https://bitgeni.us/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="bitgeni.us ATOM Feed" />
-  </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="bitgeni.us, ">
 
-  <body>
-<section id="content" class="body">
-<h1>Archives for bitgeni.us</h1>
+        <link rel="alternate"  href="https://bitgeni.us/feeds/all.atom.xml" type="application/atom+xml" title="bitgeni.us Full Atom Feed"/>
 
-<dl>
-    <dt>Thu 28 January 2016</dt>
-    <dd><a href='https://bitgeni.us/state-synchronization.html'>State Synchronization</a></dd>
-</dl>
-</section>
+        <title>all posts // bitgeni.us // </title>
 
-    <footer>
-      <nav>
-        <ul>
-          <li>:: <a href="https://bitgeni.us/tags.html">Tags</a></li>
-        </ul>
-      </nav>
-      <p class="theme-credit"><a href="http://github.com/bfrog/bitgenius_theme">Bitgeni.us</a></p>
-    </footer>
 
-    <script type="text/javascript" src="https://bitgeni.us/theme/js/bitgenius.js"></script></script></script></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://bitgeni.us/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="pure-g-r" id="layout">
+<div class="sidebar pure-u">
+    <div class="cover-img" style="background-image: url('/theme/images/trees.jpg')">
+        <div class="cover-body">
+            <header class="header">
+                <hgroup>
+                    <h1 class="brand-main"><a href="/">bitgeni.us</a></h1>
+                    <p class="tagline"></p>
+                    <p class="social">
+                        <a href="#">
+                            <i class="fa fa-You can add links in your config file fa-3x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-Another social link fa-3x"></i>
+                        </a>
+                    <p>
+                </hgroup>
+            </header>
+        </div>
+    </div>
+</div>    <div class="pure-u-1">
+        <div class="content">
+            <h1 class="content-subhead">All posts</h1>
+                <div class="archive-item">
+                    <a href="https://bitgeni.us/author/tom-burdick.html" title="See posts by Tom Burdick">
+                    </a>
+                    <h5 class="archive-date">2016</h5>
+                    <h4 class="archive-date">28 January</h4>
+                    <div class="archive-post"><a href="state-synchronization.html">State Synchronization</a></div>
+                    <p class="archive-meta">Tom Burdick in <a href="https://bitgeni.us/category/software-architecture.html">software-architecture</a></p>
+                </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <p>&copy; bitgeni.us &ndash;
+        Built with <a href="https://github.com/PurePelicanTheme/pure">Pure Theme</a>
+        for <a href="http://blog.getpelican.com/">Pelican</a>
+    </p>
+</footer>    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
 </body>
 </html>

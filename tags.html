@@ -1,27 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>bitgeni.us</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="https://bitgeni.us/theme/css/bitgenius.css" />
-    <link href="https://bitgeni.us/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="bitgeni.us ATOM Feed" />
-  </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="bitgeni.us, ">
 
-  <body>
-<ul>
-    <li><a href="https://bitgeni.us/tag/distributed-systems.html">distributed-systems</a></li>
-    <li><a href="https://bitgeni.us/tag/software-architecture.html">software-architecture</a></li>
-</ul>
+        <link rel="alternate"  href="https://bitgeni.us/feeds/all.atom.xml" type="application/atom+xml" title="bitgeni.us Full Atom Feed"/>
 
-    <footer>
-      <nav>
-        <ul>
-          <li>:: <a href="https://bitgeni.us/tags.html">Tags</a></li>
-        </ul>
-      </nav>
-      <p class="theme-credit"><a href="http://github.com/bfrog/bitgenius_theme">Bitgeni.us</a></p>
-    </footer>
+        <title>bitgeni.us - Tags</title>
 
-    <script type="text/javascript" src="https://bitgeni.us/theme/js/bitgenius.js"></script></script></script></script>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://bitgeni.us/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Tags for bitgeni.us</h1>        <li><a href="https://bitgeni.us/tag/distributed-systems.html">distributed-systems</a> (1)</li>
+        <li><a href="https://bitgeni.us/tag/software-architecture.html">software-architecture</a> (1)</li>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
 </body>
 </html>
